@@ -2,7 +2,7 @@
     <string name="app_name">FitnessTracker</string>
     <string name="title_activity_login">Sign in</string>
 
-    <!-- Strings related to login -->
+    <!-- Strings related to login / register -->
     <string name="prompt_email">Email</string>
     <string name="prompt_weight">Weight</string>
     <string name="prompt_height">Height</string>
@@ -21,8 +21,9 @@
         completions."
     </string>
     <string name="title_activity_register">Sign in</string>
+    <string name="action_sign_in">Sign in</string>
 
-    <string name="action_sign_in">Sign in or register</string>
+    <!-- Strings related to main screens -->
     <string name="title_activity_bottom_navigation">BottomNavigation</string>
     <string name="title_home">Daily ration</string>
     <string name="title_food_list">Food list</string>
@@ -32,7 +33,7 @@
     <string name="current_date">10.02.2018</string>
     <string name="add_dish">Add dish</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="details">Details</string>
     <string name="name_of_dish">Name of dish</string>
