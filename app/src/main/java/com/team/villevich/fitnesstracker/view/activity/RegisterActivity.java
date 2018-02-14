@@ -3,7 +3,9 @@ package com.team.villevich.fitnesstracker.view.activity;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.sax.StartElementListener;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -21,11 +23,9 @@ import android.provider.ContactsContract;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.inputmethod.EditorInfo;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -33,6 +33,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.team.villevich.fitnesstracker.R;
+import com.team.villevich.fitnesstracker.view.fragment.BottomNavigation;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
@@ -64,6 +65,8 @@ public class RegisterActivity extends AppCompatActivity implements LoaderCallbac
     private View mProgressView;
     private View mLoginFormView;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,6 +91,8 @@ public class RegisterActivity extends AppCompatActivity implements LoaderCallbac
         mLoginFormView = findViewById(R.id.register_form);
         mProgressView = findViewById(R.id.register_progress);
     }
+
+
 
     private void populateAutoComplete() {
         if (!mayRequestContacts()) {
@@ -272,6 +277,11 @@ public class RegisterActivity extends AppCompatActivity implements LoaderCallbac
                         android.R.layout.simple_dropdown_item_1line, emailAddressCollection);
 
         mEmailView.setAdapter(adapter);
+    }
+
+    public void BtnRegsterClick(View view) {
+        Intent intent = new Intent (this,BottomNavigation.class);
+        startActivity(intent);
     }
 
 
