@@ -9,12 +9,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.team.villevich.fitnesstracker.R;
 
 public class BottomNavigation extends AppCompatActivity {
-
-    private TextView mTextMessage;
 
     BottomNavigationView bottomNavigationView;
 
@@ -84,7 +83,6 @@ public class BottomNavigation extends AppCompatActivity {
         });
 
        /*  //Disable ViewPager Swipe
-
        viewPager.setOnTouchListener(new View.OnTouchListener()
         {
             @Override
@@ -93,7 +91,6 @@ public class BottomNavigation extends AppCompatActivity {
                 return true;
             }
         });
-
         */
 
         setupViewPager(viewPager);
@@ -108,5 +105,11 @@ public class BottomNavigation extends AppCompatActivity {
         adapter.addFragment(foodListFragment);
         adapter.addFragment(rationHistoryFragment);
         viewPager.setAdapter(adapter);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Toast toast = Toast.makeText(this, "Sidi tyt,suka", Toast.LENGTH_SHORT);
+        toast.show();
     }
 }

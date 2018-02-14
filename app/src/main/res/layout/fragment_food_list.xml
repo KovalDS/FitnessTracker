@@ -17,29 +17,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.design.widget.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:layout_marginEnd="128dp"
-        android:background="@color/colorAccent"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/blue_1"
         android:clickable="true"
         android:focusable="true"
-        android:src="@mipmap/ic_add_white_36dp"
+
+        android:src="@mipmap/ic_add_white_48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:rippleColor="@android:color/white" />
-
-    <com.melnykov.fab.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="32dp"
-        android:background="@color/colorAccent"
-        android:src="@mipmap/ic_add_white_36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:rippleColor="@android:color/white"
-        android:clickable="true"
-        android:focusable="true"/>
-
+        <!--android:scaleType="center"-->
 </android.support.constraint.ConstraintLayout>
