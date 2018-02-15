@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     tools:context="com.team.villevich.fitnesstracker.view.fragment.FoodListFragment">
 
-
     <ExpandableListView
         android:id="@+id/expandableListView"
         android:layout_width="match_parent"
@@ -19,16 +18,15 @@
     <android.support.design.widget.FloatingActionButton
         android:layout_width="45dp"
         android:layout_height="45dp"
-
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
         android:background="@color/blue_1"
         android:clickable="true"
         android:focusable="true"
-
         android:src="@mipmap/ic_add_white_48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:rippleColor="@android:color/white" />
         <!--android:scaleType="center"-->
+
 </android.support.constraint.ConstraintLayout>
